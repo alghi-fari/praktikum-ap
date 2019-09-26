@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int nilai;
+    cout << "Masukkan bilangan: ";
+    cin >> nilai;
+    if(nilai % 2) // menghasilkan sisa
+    {
+        cout << "Bilangan " << nilai << " termasuk bilangan ganjil";
+        return 0;
+    }
+    else
+    {
+        cout << "Bilangan " << nilai << " termasuk bilangan genap";
+        return 0;
+    }
