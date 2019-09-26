@@ -17,5 +17,5 @@ int main() {
     rerata = (n_tugas + n_uts + n_uas) / 3;
     cout << "\n";
     cout << "Nilai rata-rata: " << rerata;
-    
+    return 0;
 }
