@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n_tugas, n_uts, n_uas, rerata;
+    n_tugas = 89;
+    n_uts = 97;
+    n_uas = 90;
+    
+    cout << "Data nilai Mahasiswa\n";
+    cout << "\n";
+    
+    cout << "Nilai tugas: " << n_tugas << '\n';
+    cout << "Nilai uts: " << n_uts << '\n';
+    cout << "Nilai ujian akhir: " << n_uas << '\n';
+    rerata = (n_tugas + n_uts + n_uas) / 3;
+    cout << "\n";
+    cout << "Nilai rata-rata: " << rerata;
+    
+}
