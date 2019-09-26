@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n_tes, n_uts, n_uas, n_tugas, n_akhir, n_tes2, n_uts2, n_uas2, n_tugas2;
+    cout << "Nilai akhir mata kuliah 'matematika' " << endl;
+    cout << "Masukkan nilai tes : " << endl;
+    cin >> n_tes;
+    cout << "Masukkan nilai uts : " << endl;
+    cin >> n_uts;
+    cout << "Masukkan nilai uas : " << endl;
+    cin >> n_uas;
+    cout << "Masukkan nilai tugas : " << endl;
+    cin >> n_tugas;
+    
+    // penghitungan
+    n_tes2 = (n_tes*20)/100;
+    n_uts2 = (n_uts*30)/100;
+    n_uas2 = (n_uas*30)/100;
+    n_tugas2 = (n_tugas*20)/100;
+    n_akhir = n_tes2 + n_uts2 + n_uas2 + n_tugas2;
+    
+    // output
+    cout << "Persentase = 20% nilai tes + 30% nilai UTS + 30% nilai UAS + 20% nilai tugas" << endl;
+    cout << "Nilai akhir = " << n_tes2 << " + " << n_uts2 << " + " << n_uas2 << " + " << n_tugas2 << " = " << n_akhir << endl;
+    cout << "-----------------------------------------------------------------------------" << endl;
+    cout << "Indeks nilai =  " << endl;
+    cout << " Nilai > 80 [A] | 80 >= Nilai > 70  [B] | 70>= Nilai > 50 [C] | Nilai <=50 [D] " << endl;
+    cout << "-----------------------------------------------------------------------------" << endl;
+    
+    //kondisional statemen
+    if(n_akhir <= 50)
+    {
+        cout << "Indeks nilainya adalah D" << endl;
+    } else if(n_akhir <= 70) {
+        cout << "Indeks nilainya adalah C" << endl;
+    } else if(n_akhir <= 80) {
+        cout << "Indeks nilainya adalah B" << endl;
+    } else if(n_akhir > 80) {
+        cout << "Indeks nilainya adalah A" << endl;
+    }
+    
+}
